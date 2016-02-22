@@ -1,10 +1,12 @@
 // Your JS goes here
 
+
 var wrapFirstRow = document.createElement('section');
 var body = document.getElementsByTagName('body')[0];
 body.appendChild(wrapFirstRow);
 wrapFirstRow.style.width = "450px";
 wrapFirstRow.style.height = '450px';
+
 
 
 for(var i = 0; i < 81; i++){
@@ -22,4 +24,13 @@ for(var i = 0; i < 81; i++){
     .appendChild(newDiv)
 }
 
-var oddDivs = document.querySelectorAll('div:nth-of-type(odd)');
+// var chooseColor = function() {
+//   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
+// };
+
+
+
+
+// function getNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min) + min);
+// }
