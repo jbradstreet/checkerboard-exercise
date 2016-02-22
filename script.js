@@ -24,9 +24,9 @@ for(var i = 0; i < 81; i++){
     .appendChild(newDiv)
 }
 
-// var chooseColor = function() {
-//   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
-// };
+var chooseColor = function() {
+  return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
+};
 
 
 
