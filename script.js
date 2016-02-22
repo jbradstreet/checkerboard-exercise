@@ -16,17 +16,17 @@ for(var i = 0; i < 81; i++){
   newDiv.style.cssText += 'height: 50px;';
   newDiv.style.cssText += 'margin-bottom: -4px;';
     if (i % 2 == 0) {
-      newDiv.style.cssText += 'background: black';
+      newDiv.style.cssText += 'background: linear-gradient(to bottom, black, white)';
     } else {
-      newDiv.style.cssText += "background: red";
+      newDiv.style.cssText += "background: linear-gradient(to bottom, red, white)";
     }
   document.getElementsByTagName('section')[0]
     .appendChild(newDiv)
 }
 
-var chooseColor = function() {
-  return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
-};
+// var chooseColor = function() {
+//   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
+// };
 
 
 
