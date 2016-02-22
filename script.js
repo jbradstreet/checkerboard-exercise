@@ -7,6 +7,9 @@ body.appendChild(wrapFirstRow);
 wrapFirstRow.style.width = "450px";
 wrapFirstRow.style.height = '450px';
 
+var chooseColor = function() {
+  return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
+};
 
 
 for(var i = 0; i < 81; i++){
@@ -24,9 +27,7 @@ for(var i = 0; i < 81; i++){
     .appendChild(newDiv)
 }
 
-// var chooseColor = function() {
-//   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
-// };
+
 
 
 
