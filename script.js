@@ -8,12 +8,10 @@ wrapFirstRow.style.width = "450px";
 wrapFirstRow.style.height = '450px';
 
 
-var intervalID = window.setInterval(chooseColor, 2000);
-
 function chooseColor() {
   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
-}
-
+};
+setInterval(chooseColor, 2000);
 
 
 for(var i = 0; i < 81; i++){
