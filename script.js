@@ -11,6 +11,7 @@ function chooseColor() {
   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
 }
 
+
 for(var i = 0; i < 81; i++){
   var newDiv = document.createElement('div')
   newDiv.style.cssText = 'width: 50px;';
@@ -25,3 +26,11 @@ for(var i = 0; i < 81; i++){
     document.getElementsByTagName('section')[0]
       .appendChild(newDiv)
   }
+
+var addButton = document.createElement('button');
+var body = document.getElementsByTagName('body')[0];
+body.appendChild(addButton);
+
+var addButtonText = document.createTextNode('Press to Start');
+var button = document.querySelector('button');
+button.appendChild(addButtonText);
