@@ -10,18 +10,21 @@ wrapFirstRow.style.height = '450px';
 
 
 for(var i = 0; i < 81; i++){
+  var gradientValue = 1 - (i / 90);
+
   var newDiv = document.createElement('div')
   newDiv.style.cssText = 'width: 50px;';
   newDiv.style.cssText += 'display: inline-block;';
   newDiv.style.cssText += 'height: 50px;';
   newDiv.style.cssText += 'margin-bottom: -4px;';
-    if (i % 2 == 0) {
-      newDiv.style.cssText += 'background: linear-gradient(to bottom, black, white)';
+    if (i % 2 === 0) {
+      newDiv.style.backgroundColor = `rgba(62, 208, 200, ${gradientValue})`;
     } else {
-      newDiv.style.cssText += "background: linear-gradient(to bottom, red, white)";
+      console.log('test');
+      newDiv.style.backgroundColor = `rgba(71, 62, 208, ${gradientValue})`;
     }
   document.getElementsByTagName('section')[0]
-    .appendChild(newDiv)
+    .appendChild(newDiv);
 }
 
 // var chooseColor = function() {
