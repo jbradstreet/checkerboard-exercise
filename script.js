@@ -17,8 +17,8 @@ function flashing () {
   var body = document.getElementsByTagName('body')[0];
   body.innerHTML = '';
   var wrapFirstRow = document.createElement('section');
-
   body.appendChild(wrapFirstRow);
+
   wrapFirstRow.style.width = "450px";
   wrapFirstRow.style.height = '450px';
   for(var i = 0; i < 81; i++){
