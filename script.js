@@ -8,13 +8,12 @@ wrapFirstRow.style.width = "450px";
 wrapFirstRow.style.height = '450px';
 
 
-function changeColor() {
-  setInterval(chooseColor, 1000);
-}
+var intervalID = window.setInterval(chooseColor, 2000);
 
 function chooseColor() {
   return 'rgb(' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
 }
+
 
 
 for(var i = 0; i < 81; i++){
